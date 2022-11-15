@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1> Hello, motherfucking {{ userName}} </h1>
+    <h1> Hello,  {{ userName}} </h1>
   </div>
 </template>
 
@@ -12,6 +12,10 @@
         userName: this.$route.params.userName
       }
     },
+    beforeRouteUpdate(to, from, next) {
+      this.userName = to.params.userName
+      next()
+    }
   }
 
 </script>

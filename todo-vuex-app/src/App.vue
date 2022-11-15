@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <h1>Todo List</h1>
-    <h2>You have {{ unCompletedTodosCount }} Todos you bitch wake up and start to work  </h2>
+    <h2>You have {{ unCompletedTodosCount }} Todos you wake up and start to work  </h2>
     <h2>Completed Todos : {{ completedTodosCount }} </h2>
     <TodoList/>
     <TodoForm/>
